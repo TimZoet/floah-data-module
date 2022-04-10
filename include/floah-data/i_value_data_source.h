@@ -1,0 +1,52 @@
+#pragma once
+
+////////////////////////////////////////////////////////////////
+// Standard includes.
+////////////////////////////////////////////////////////////////
+
+#include <string>
+
+////////////////////////////////////////////////////////////////
+// Current target includes.
+////////////////////////////////////////////////////////////////
+
+#include "floah-data/data_source.h"
+
+namespace floah
+{
+    class IValueDataSource : public DataSource
+    {
+    public:
+        ////////////////////////////////////////////////////////////////
+        // Constructors.
+        ////////////////////////////////////////////////////////////////
+
+        IValueDataSource() = default;
+
+        IValueDataSource(const IValueDataSource&) = delete;
+
+        IValueDataSource(IValueDataSource&&) noexcept = delete;
+
+        ~IValueDataSource() noexcept override = default;
+
+        IValueDataSource& operator=(const IValueDataSource&) = delete;
+
+        IValueDataSource& operator=(IValueDataSource&&) noexcept = delete;
+
+        ////////////////////////////////////////////////////////////////
+        // Getters.
+        ////////////////////////////////////////////////////////////////
+
+        [[nodiscard]] virtual void* getVoid() = 0;
+
+        [[nodiscard]] virtual std::string getString() = 0;
+
+        ////////////////////////////////////////////////////////////////
+        // Setters.
+        ////////////////////////////////////////////////////////////////
+
+        virtual void setVoid(void* v) = 0;
+
+        virtual void setString(const std::string& v) = 0;
+    };
+}  // namespace floah

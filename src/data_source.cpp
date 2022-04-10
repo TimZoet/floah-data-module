@@ -1,0 +1,12 @@
+#include "floah-data/data_source.h"
+
+namespace floah
+{
+    ////////////////////////////////////////////////////////////////
+    // Constructors.
+    ////////////////////////////////////////////////////////////////
+
+    DataSource::DataSource() = default;
+
+    DataSource::~DataSource() noexcept = default;
+}  // namespace floah

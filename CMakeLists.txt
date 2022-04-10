@@ -7,15 +7,21 @@ set(INCLUDE_DIR "include/floah-data")
 set(SRC_DIR "src")
 
 set(HEADERS
-    
+    ${INCLUDE_DIR}/bool_data_source.h
+    ${INCLUDE_DIR}/data_source.h
+    ${INCLUDE_DIR}/i_bool_data_source.h
+    ${INCLUDE_DIR}/i_list_data_source.h
+    ${INCLUDE_DIR}/i_value_data_source.h
+    ${INCLUDE_DIR}/value_data_source.h
 )
 
 set(SOURCES
-    ${SRC_DIR}/output.cpp
+    ${SRC_DIR}/bool_data_source.cpp
+    ${SRC_DIR}/data_source.cpp
 )
 
 set(DEPS_PUBLIC
-
+    floah-layout
 )
 
 set(DEPS_PRIVATE

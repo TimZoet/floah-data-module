@@ -21,7 +21,7 @@ set(SOURCES
 )
 
 set(DEPS_PUBLIC
-    floah-layout
+    floah-common
 )
 
 set(DEPS_PRIVATE

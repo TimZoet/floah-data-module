@@ -22,4 +22,6 @@ namespace floah
 
     void BoolDataSource::set(const bool v) { *value = v; }
 
+    void BoolDataSource::toggle() { set(!*value); }
+
 }  // namespace floah

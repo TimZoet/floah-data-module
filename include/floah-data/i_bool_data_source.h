@@ -38,5 +38,7 @@ namespace floah
         ////////////////////////////////////////////////////////////////
 
         virtual void set(bool v) = 0;
+
+        virtual void toggle() = 0;
     };
 }  // namespace floah

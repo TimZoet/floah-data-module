@@ -41,6 +41,8 @@ namespace floah
 
         void set(bool v) override;
 
+        void toggle() override;
+
     private:
         ////////////////////////////////////////////////////////////////
         // Member variables.

@@ -10,6 +10,7 @@ set(HEADERS
     ${INCLUDE_DIR}/bool_data_source.h
     ${INCLUDE_DIR}/data_source.h
     ${INCLUDE_DIR}/i_bool_data_source.h
+    ${INCLUDE_DIR}/i_integral_value_data_source.h
     ${INCLUDE_DIR}/i_list_data_source.h
     ${INCLUDE_DIR}/i_value_data_source.h
     ${INCLUDE_DIR}/value_data_source.h

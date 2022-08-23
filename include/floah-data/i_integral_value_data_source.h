@@ -62,7 +62,7 @@ namespace floah
 
     public:
         template<std::integral T>
-        void get(T val)
+        void set(T val)
         {
             setIntegral(val);
         }

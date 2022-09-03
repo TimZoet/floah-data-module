@@ -65,6 +65,7 @@ namespace floah
         void set(T val)
         {
             setIntegral(val);
+            emitDataSourceUpdate();
         }
 
     protected:

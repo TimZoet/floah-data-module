@@ -8,6 +8,7 @@ set(SRC_DIR "src")
 
 set(HEADERS
     ${INCLUDE_DIR}/bool_data_source.h
+    ${INCLUDE_DIR}/data_listener.h
     ${INCLUDE_DIR}/data_source.h
     ${INCLUDE_DIR}/i_bool_data_source.h
     ${INCLUDE_DIR}/i_integral_value_data_source.h

@@ -20,7 +20,13 @@ namespace floah
     // Setters.
     ////////////////////////////////////////////////////////////////
 
-    void BoolDataSource::set(const bool v) { *value = v; }
+    void BoolDataSource::set(const bool v)
+    {
+        if (v == *value) return;
+
+        *value = v;
+        emitDataSourceUpdate();
+    }
 
     void BoolDataSource::toggle() { set(!*value); }
 

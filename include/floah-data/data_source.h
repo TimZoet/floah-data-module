@@ -37,11 +37,11 @@ namespace floah
         // Listeners.
         ////////////////////////////////////////////////////////////////
 
-        void addDataListener(DataListener& listener);
+        virtual void addDataListener(DataListener& listener);
 
-        void removeDataListener(DataListener& listener);
+        virtual void removeDataListener(DataListener& listener);
 
-        void emitDataSourceUpdate();
+        virtual void emitDataSourceUpdate();
 
     private:
         ////////////////////////////////////////////////////////////////

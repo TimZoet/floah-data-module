@@ -7,7 +7,6 @@ set(INCLUDE_DIR "include/floah-data")
 set(SRC_DIR "src")
 
 set(HEADERS
-    ${INCLUDE_DIR}/bool_data_source.h
     ${INCLUDE_DIR}/data_listener.h
     ${INCLUDE_DIR}/data_source.h
     ${INCLUDE_DIR}/i_bool_data_source.h
@@ -18,7 +17,6 @@ set(HEADERS
 )
 
 set(SOURCES
-    ${SRC_DIR}/bool_data_source.cpp
     ${SRC_DIR}/data_source.cpp
 )
 
